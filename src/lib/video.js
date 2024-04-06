@@ -15,6 +15,7 @@ const createVideoProcessJob = async (processId, userId, videoKey, gpxKey, styleK
     const item = {
         id: { S: processId },
         status: { S: VIDEO_PROCESS_STATUS_IN_PROGRESS },
+        progress: { N: '0' },
         userId: { S: userId },
         videoKey: { S: videoKey },
         gpxKey: { S: gpxKey },
